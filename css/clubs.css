@@ -1,0 +1,108 @@
+.clubs-title-banner {
+  background-color: #f2f200;
+  padding: 12px 64px;
+  transform: skewX(-10deg);
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0% 100%);
+  margin-bottom: 40px;
+  margin-top: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clubs-title-banner h2 {
+  margin: 0;
+  font-family: 'Arial Black', 'Gadget', sans-serif;
+  font-size: 26px;
+  color: #00502f;
+  text-align: center;
+  transform: skewX(10deg);
+}
+
+/* CLUBS MAIN */
+.clubs-main {
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.clubs-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+/* CLUB CARDS */
+.club-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 160px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.club-media {
+  flex: 0 0 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.club-media img {
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 22px;
+  background: linear-gradient(#ffffff, #f4f4f4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.club-label h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
+.club-label p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* CLUB BG */
+.card-pink {
+  background: linear-gradient(180deg, #fff6f8, #ffeef2);
+}
+
+.card-brown {
+  background: linear-gradient(180deg, #f7f2ef, #efe6e3);
+}
+
+.card-green {
+  background: linear-gradient(180deg, #f2fff3, #eaffed);
+}
+
+.card-bluegrey {
+  background: linear-gradient(180deg, #e5e9f0, #dfe3ea);
+}
+
+.card-red {
+  background: linear-gradient(180deg, #ffeaea, #ffe2e2);
+}
+
+.card-flame {
+  background: linear-gradient(180deg, #eef2f7, #e6ebf2);
+}

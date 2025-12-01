@@ -1,0 +1,212 @@
+.content-wrapper {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.sub-header {
+  background-color: #006838;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 4px solid #fdd100;
+  border-bottom: 4px solid #fdd100;
+  margin-bottom: 50px;
+}
+
+.sub-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.achievements-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 104, 56, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 104, 56, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #006838;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.read-more {
+  color: #006838;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  align-self: flex-start;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #004d28;
+}
+
+.bar-header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.bar-green {
+  height: 20px;
+  background-color: #006837;
+}
+
+.bar-yellow {
+  height: 5px;
+  background-color: #ffc72c;
+}
+
+/* NEWS ARTICLES */
+.news-article {
+  margin-top: 40px;
+}
+
+.article-congratulations {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-congratulations:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.congrats-image-container {
+  flex: 1;
+  max-width: 320px;
+}
+
+.congrats-image-container img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.congrats-text-container {
+  flex: 1.5;
+}
+
+.congrats-text-container h2 {
+  font-size: 24px;
+  color: #008037;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+.congrats-text-container p {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+}
+
+.article-sosa {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.article-sosa img {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.article-sosa h2 {
+  font-size: 24px;
+  color: #008037;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+.article-sosa p {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RSPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .achievements-grid {
+    flex-direction: column;
+  }
+
+  .article-congratulations {
+    flex-direction: column;
+  }
+
+  .congrats-image-container {
+    max-width: 100%;
+  }
+}
